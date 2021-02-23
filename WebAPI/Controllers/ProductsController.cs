@@ -26,7 +26,7 @@ namespace WebAPI.Controllers
         public IActionResult Get()
         {
             var result = _productService.GetAll();
-            if (result.Success) // result.Success == True
+            if (result.Success) // if(result.Success == True)
             {
                 return Ok(result); // result.Data
             }
